@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bintang Besar dan Jatuh</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .text-container {
+            position: absolute;
+            z-index: 1;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            max-width: 300px;
+        }
+
+        .star {
+            position: absolute;
+            color: yellow;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+        }
+        .star.big {
+            font-size: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button-container {
+            position: relative;
+            z-index: 2;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            background-color: #FFA500;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .star.falling {
+            font-size: 5px;
+            animation: fall linear infinite;
+            animation-duration: var(--duration);
+            top: var(--top);
+            left: var(--left);
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="star big">*</div>
+    <div class="star falling" style="--top: 0%; --left: 10%; --duration: 2s;">*</div>
+    <div class="star falling" style="--top: 0%; --left: 30%; --duration: 3s;">*</div>
+    <div class="star falling" style="--top: 0%; --left: 50%; --duration: 4s;">*</div>
+    <div class="star falling" style="--top: 0%; --left: 70%; --duration: 5s;">*</div>
+    <div class="star falling" style="--top: 0%; --left: 90%; --duration: 6s;">*</div>
+
+        <audio autoplay loop>
+            <source src="eca.mp3" type="audio/mpeg">
+            
+        </audio>
+    <div class="text-container">
+      Kamu kayak bintang yang paling besar ini, begitu terang, indah, dan sempurna. Jadi gada alasan buat insecure trus.
+  </div>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            let star = document.createElement('div');
+            star.className = 'star falling';
+            star.style.setProperty('--top', (Math.random() * 100) + '%');
+            star.style.setProperty('--left', (Math.random() * 100) + '%');
+            star.style.setProperty('--duration', (Math.random() * 5 + 2) + 's');
+            star.innerHTML = '*';
+            document.body.appendChild(star);
+        }
+
+        document.getElementById('audioPlayer').addEventListener('play', function() {
+    this.muted = false;
+    </script>
+     <div class="button-container">
+      <a href="/ABOUT US/index.html" target="_blank">
+          <button>sini sinii!!</button>
+      </a>
+  </div>
+</body>
+</html>
+

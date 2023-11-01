@@ -1,0 +1,415 @@
+<div class="wrapper">
+
+    <div class="item">
+      <div class="polaroid"><img src="senopa1ti.jpg">
+        <div class="caption">Ini yang terbaru senopati date,btw aing yang pake baju orange😋😋</div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <div class="polaroid"><img src="us1.jpg">
+        <div class="caption">ini kita waktu awal nobar,xixixi aing wibu syekali geyss</div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <div class="polaroid"><img src="ricis1.jpg">
+        <div class="caption">ini waktu si paling ricis minta ayam satu ekor,akhirnya ga abis hadehh liat aja lidahnya tuh</div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <div class="polaroid"><img src=wisuda.jpg>
+        <div class="caption">ini waktu dia di datengin kesekolah pas wisuda,eh malah pulang sebelum ketemu</div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="polaroid"><img src="nobi.jpg">
+        <div class="caption">ini waktu kita marahan eh pas ketemu malah adem ayem,
+            cih curang sekalii emang boleh selucu itu sampe bikin orang gabisa marah? </div>
+      </div>
+    </div>
+
+    <div class="text-container"></div>
+    <p>banyak ya kenangan kita sayang,ini aja blum semua semoga aja kmu suka dan maap klo kata-kata nya prikk</p>
+    <a href="/LOVE.HTML" class="button">               yuu ikut lagii!!</a>
+        <audio controls loop>
+            <source src="eca.mp3" type="audio/mpeg">
+            
+        </audio>
+</div>
+  </div>
+
+  <div class="wndFrame" id="mainWnd"><h3 class="wndCaption">
+
+	<img src="//cdn1.iconfinder.com/data/icons/realistiK-new/16x16/actions/love.png" alt="♥" hspace="2" vspace="1" align="left">
+	<img src="//jaboja.pl/limgen/hx.gif" alt="?x" usemap="#hx" align="right">
+	<map name="hx" id="hx">
+		<area shape="rect" title="O autorze" alt="?" href="javascript:" onclick="return about()" coords="3,4,18,17">
+		<area shape="rect" title="Zamknij" alt="x" href="javascript:" onclick="return closeWnd()" coords="21,4,36,17">
+	</map>
+
+  <p>Love</p>
+</h3><div class="wnd">
+	<div id="bar"><div id="progress"></div></div>
+	<button onclick="return fallIn()" id="btn">seberapa sayang sama aku?</button>
+</div></div>
+
+<div id="aboutWnd" style="display:none" class="wndFrame"><h3 class="wndCaption aboutCaption">
+	<img src="//jaboja.pl/limgen/hx.gif" alt="x" onclick="return closeAbout();" class="closeAbout">
+	About
+</h3><div class="wnd">
+	<div class="wndText">
+  Do digital poetry has to use classical forms, since it has a lot of its own means of expression, which could be used for narration on their own.
+  The user interface can be a mean of narration too!
+	<br><br>
+  Seeing that the classical poetry may describe and praise things as noble (or as trivial) as love, why digital poetry should not do alike?
+	<br><br>
+  The question remains, should such simple programmers' toys be still called &ldquo;the poetry&rdquo;. Maybe not yet? But since contemporary art used to deem that everythng could be art, if only an artist do call it art, then so:
+	<div style="text-align:center;margin:1em auto">Hereby I call this script &ldquo;a poem&rdquo;!</div>
+	Has become, it is!</div>
+  <button onclick="return closeAbout()">ga sayang?</button>
+</div></div>
+
+
+  <style>
+
+html,body {
+	width: 100%;
+	height: 100%;
+	display: table;
+	background: #808080 linear-gradient(#a3a39a, #808080);
+}
+body {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 17vh;
+}
+#bar {
+	border: 1px solid #a3a39a;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 0 2px 2px 0;
+	background: #E4E4E0;
+	margin: 0 auto 8px;
+	padding: 1px;
+	width: 296px;
+}
+#bar #progress {
+	background: #804;
+	height: 13px;
+	visibility: hidden;
+	width: 1px;
+}
+button {
+  position: relative;
+	width: 103px;
+  background: #E4E4E0;
+  border: 1px solid #000;
+  border-top: none;
+  border-left-color: #fff;
+  padding: 2px 0 1px;
+}
+
+.button {
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button:hover {
+            background-color: turquoise;
+        }
+
+button:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #A3A39A;
+  border-top-color: #fff;
+  border-left: none;
+  border-radius: 0 2px 0 0;
+}
+button:active {
+  border: 1px solid #000;
+  border-bottom: none;
+  border-right-color: #fff;
+  padding: 1px 0 2px;
+}
+button:active:before {
+  border: 1px solid #A3A39A;
+  border-bottom-color: #fff;
+  border-right: none;
+  border-radius: 0 0 0 2px;
+}
+button:focus {
+  outline: 1px solid #000;
+}
+button::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+.wndFrame {
+  position: relative;
+	width: 372px;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #A3A39A #000 #000 #A3A39A;
+	margin: 0 auto;
+  padding: 1px;
+	text-align: center;
+	background: #E4E4E0;
+}
+.wndFrame:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px outset #E4E4E0;
+}
+.wnd {
+	width: 340px;
+	margin: 0 auto;
+	padding: 24px 16px 16px;
+	background: #E4E4E0;
+}
+.wndCaption {
+	margin: 1px 2px 0 1px;
+  padding: 0;
+	height: 18px;
+  font: bold 12.5px Helvetica,Arial,"Helvetica Neue",sans-serif;
+	background: #302 linear-gradient(90deg, #302, #C69);
+  
+	color: #fff;
+}
+.wndCaption p {
+  line-height: 18px;
+  margin: 0;
+}
+.wndText {
+	text-align: left;
+	margin: 0 0 24px;
+	font: normal 80% Tahoma,sans-serif;
+}
+
+#aboutWnd {
+	width: 482px;
+}
+#aboutWnd .wnd {
+	width: 450px;
+	padding: 8px 8px 16px;
+}
+.closeAbout {
+  position: absolute;
+  clip: rect(0,38px,18px,20px);
+  top: 2px;
+  right: 3px;
+  cursor: pointer;
+  border: 0;
+}
+.aboutCaption {
+  background: url('//jaboja.pl/limgen/win.gif') 2px 3px no-repeat, #008 linear-gradient(90deg, #00007b, #0884ce);
+  text-align: left;
+  padding-left: 21px;
+}
+
+     @IMPORT <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poor Story', cursive;
+  background: #bdffbd;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+  </style>
+
+  <script>
+    var btn = document.getElementById('btn');
+var progress = document.getElementById('progress');
+var w = 1, i;
+
+function fallIn() {
+	progress.style.visibility = 'visible';
+	
+	btn.innerHTML = "Cancel";
+	btn.onclick = function() {
+		clearInterval(i);
+		btn.innerHTML = "Fall out of love";
+		btn.onclick = fallOut;
+	};
+	
+	i = setInterval(f = function(){
+		w += 5;
+		if(w > 296) {
+			clearInterval(i);
+			btn.innerHTML = "Fall out of love";
+			btn.onclick = fallOut;
+		} else {
+			progress.style.width = w + 'px';
+		}
+	}, 100);
+	
+	return false;
+}
+
+function fallOut() {
+	btn.innerHTML = "Cancel";
+	btn.onclick = function(){
+		clearInterval(i);
+		btn.innerHTML = "Fall in love";
+		btn.onclick = fallIn;
+	};
+	
+	i = setInterval(f = function(){
+		w -= 5;
+		if(w <= 0) {
+			clearInterval(i);
+			progress.style.visibility = 'hidden';
+			btn.innerHTML = "Fall in love";
+			btn.onclick = fallIn;
+		} else {
+			progress.style.width = w + 'px';
+		}
+	}, 100);
+	
+	return false;
+}
+
+function closeWnd() {
+	var wnd = document.getElementById('mainWnd');
+	wnd.style.display = 'none';
+	setTimeout(function(){
+		wnd.style.display = '';
+	}, 3000);
+  return false;
+}
+
+function about(self) {
+	document.getElementById('mainWnd').style.display = 'none';
+	document.getElementById('aboutWnd').style.display = '';
+  return false;
+}
+
+function closeAbout() {
+	document.getElementById('aboutWnd').style.display = 'none';
+	document.getElementById('mainWnd').style.display = 'block';
+}
+
+document.getElementById('audioPlayer').addEventListener('play', function() {
+    this.muted = false;
+  </script>
